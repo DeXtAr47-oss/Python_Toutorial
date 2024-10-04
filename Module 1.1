@@ -1,0 +1,19 @@
+# Treasure Hunt
+# Milestone 1: Define a list of treasures
+treasures = ["Gold Coin", "Silver Necklace", "Ancient Artifact", "Mystic Gem", "Lost Scroll"]
+ 
+print("Welcome to the Treasure Hunt!")
+ 
+# Milestone 2: Create a function to find a treasure
+def find_treasure(index):
+    if index < len(treasures):
+        return treasures[index]
+    else:
+        return "No treasure found!"
+ 
+# Milestone 3: Prompt the user to find a treasure
+treasure_index = int(input("Enter a number to find a treasure: "))
+found_treasure = find_treasure(treasure_index)
+ 
+# Milestone 4: Print the found treasure
+print("You found:", found_treasure)
